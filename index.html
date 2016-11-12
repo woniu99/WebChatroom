@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>chatroom</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id="container">
+		<div id="menu" class="fl">
+			<div class="avatar">
+				<a href=""><img src="images/logo.png" alt="logo"></a>
+			</div>
+			<div class="tab">
+				<a href=""><i class="icon-comments icon-2x" style="color: #9EEA6A"></i></a>
+				<a href=""><i class="icon-user icon-2x" style="color: #fff"></i></a>
+				<a href=""><i class="icon-hdd icon-2x" style="color: #fff"></i></a>
+			</div>
+			<div class="set">
+				<a href=""><i class="icon-cog icon-2x" style="color: #fff"></i></a>
+			</div>
+		</div>
+		<div id="sidebar" class="fl">
+			<div class="search">
+				<form>
+					<div class="input-group">
+						<input type="text" name="search" placeholder="搜索">
+					</div>
+				</form>
+			</div>
+			<div class="rightside">
+				<div id="online">
+					线上人数：
+					<span id="people_count">0</span>
+				</div>
+				<div id="member">房间成员：</div>
+				<div id="membership"></div>
+			</div>
+		</div>
+		<div id="chat" class="fl">
+			<div class="chat-header">
+				<p>群聊</p>
+			</div>
+			<div class="chat-content chatwindow " id="chatwindow"></div>
+			<div class="chat-bottom">
+				<div class="assist">
+					<p>表情包开发中...</p>
+				</div>
+				<div class="message-input">
+					<textarea id="message" placeholder="请输入发送信息"></textarea>
+				</div>
+				<div class="message-button">
+					<button type="button" id="send">发送</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/my.js"></script>
+</body>
+
+</html>

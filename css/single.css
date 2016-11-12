@@ -1,0 +1,119 @@
+body{
+	margin: 0;
+	background:-moz-linear-gradient(bottom left,#18344D,#1F284A);
+	background: -webkit-linear-gradient(bottom left,#18344D,#1F284A);
+}
+.cover{
+	width:100%;
+	height: 100%;
+}
+h1{
+	width:1020px;
+	height: 133px;
+	margin:80px auto auto 500px;
+	font-family:"微软雅黑";
+	font-size: 60px;
+	line-height: 50px;
+}
+.main{
+	width: 1000px;
+	height:600px;
+	border:solid 1px darkolivegreen;
+	margin:10px auto auto 200px;
+}
+.leftside{
+	width:1000px;
+	height:600px;
+	border-right: solid 2px;
+	float: left;
+	background-color: #D4E7F5;
+}
+#chatwindow{
+	width: 750px;
+	height: 500px;
+	border:solid 1px darkolivegreen;
+	overflow: auto;
+	
+}
+.chatbar{
+	width:750px;
+	height:97px;
+}
+.message_input{
+	width:550px;
+	height:97px;
+	border-right: solid 2px darkolivegreen;
+	float: left;
+}
+.message_input input{
+	width:100%;
+	height:94px;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+ #send{
+	width:197px;
+	height:95px;
+	float: right;
+	border-right: solid 1px darkolivegreen;
+	background: url(../images/send.png) ;
+	background-size: 100%;
+}
+
+.chatwindow p{
+	position:relative;
+	padding: 16px 40px 16px 20px;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	border-radius:10px;
+	background-color: #AFD6E1;
+}
+.chatwindow p:before{/*头像*/
+	position:absolute;
+	top:0px;
+	width:50px;
+	height:50px;
+	border-radius: 50px;
+	content: '';
+}
+.chatwindow p:after{/*小尾巴*/
+	position:absolute;
+	content: '';
+	border-top: 15px solid #AFD6E1;
+}
+.chatwindow p.right{
+	float: right;/*头像流动位置*/
+	margin-right: 80px;
+}
+.chatwindow p.right:before{
+	right:-60px;
+	background:url(../images/photo2.png) no-repeat;
+}
+.chatwindow p.right:after{
+	border-right: 15px solid transparent;
+	right: -15px;
+}
+.chatwindow p.left{
+	float:left;
+	margin-left: 80px;
+}
+.chatwindow p.left:before{
+	left:-60px;
+	background: url(../img/photo2.png) no-repeat;
+}
+.chatwindow p.left:after{
+	border-left: 15px solid transparent;
+	left:-15px;
+}
+
+::-webkit-scrollbar{
+	width:10px;
+}
+::-webkit-scrollbar-track{
+	border-radius: 10px;
+	background-color: #A0CFD9;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #A0CFD9;
+}
